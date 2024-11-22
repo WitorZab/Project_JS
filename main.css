@@ -1,0 +1,376 @@
+body{
+    background-color: #181818;
+    color: aliceblue;
+}
+
+.lightMode{
+    background-color: aliceblue;
+    color: #181818;
+}
+
+button{
+    position: relative;
+    top: 30px;
+    left: 28px;
+    color: inherit;
+    background-color: inherit;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    border: solid;
+    border-color: #3d9bf8;
+    transition: padding 0.15s, color 0.3s;
+    border-radius: 5px;
+}
+button:hover{
+    color: #3d9bf8;
+}
+button:active{
+    padding: 9px 19px;
+}
+
+#countdown{
+    color: inherit;
+    position: relative;
+    top: 20px;
+    left: 45px;
+    font-size: 25px;
+}
+
+/*/// HOMEPAGE. nav, top-line en footer zijn gebruikt in andere paginas ///*/
+
+.top-line{
+    width: 100%;
+    height: 17px;
+    background-color: #3d9bf8; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+
+footer{
+    text-align: center;
+    background-color: #3d9bf8;
+    margin-top: 200px;
+}
+footer h2{
+    color: aliceblue;
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+nav{
+    display: flex;
+    height: 100px;
+    padding-top: 10px; 
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 70px;
+    margin-left: 250px;
+    margin-top: 30px;
+}
+
+nav ul li a {
+    border-bottom: 3px solid #3d9bf8;
+    font-weight: bold;
+    font-size: 40px;
+    text-decoration: none;
+    color: inherit;
+    padding: 10px; 
+    transition: color 0.3s, border-bottom 0.3s, font-size 0.15s;
+}
+
+nav ul li a:hover {
+    color: #3d9bf8;
+    border-bottom: 5px solid #3d9bf8;
+    font-size: 39px;
+}
+nav ul li a:active {
+    color: #3d9bf8;
+    font-size: 37px;
+}
+
+#contactme{
+    border: solid;
+    margin-left: 300px;
+    border-color: #3d9bf8;
+    transition: padding 0.15s, color 0.3s;
+    border-radius: 5px;
+}
+#contactme:hover{
+    padding: 12px;
+    color: #3d9bf8;
+}
+#contactme:active{
+    padding: 10px;
+}
+
+.homepage-content h1{
+    font-size: 40px;
+    margin-left: 100px;
+    color: inherit;
+    max-width: 700px;
+}
+
+.homepage-content img{
+    width: 450px;
+    border-radius: 50%;
+    height: 430px;
+    margin-left: 100px;
+    border: 6px solid;
+    border-color: inherit;
+    transition: border 0.3s;
+}
+.homepage-content img:hover{
+    border-color: #3d9bf8;
+    cursor: pointer;
+}
+
+.homepage-content{
+    display: flex;
+    margin-top: 130px;
+    margin-left: 200px;
+    gap: 60px;
+}
+.homepage-content p{
+    color: inherit;
+    font-size: 35px;
+    margin-left: 100px;
+    max-width: 600px;
+}
+
+.homepage-content a{
+    margin-left: 100px;
+    border: solid;
+    font-weight: bold;
+    font-size: 35px;
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+    transition: padding 0.15s, color 0.3s;
+    border-color: #3d9bf8;
+    border-radius: 5px;
+}
+
+.homepage-content a:hover{
+    color: #3d9bf8;
+    padding: 12px;
+}
+.homepage-content a:active{
+    padding: 10px;
+}
+
+/*/// CONTACT ME ///*/
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 120px;
+    border: solid;
+    border-color: #3d9bf8;
+    padding: 30px 30px 92px;
+    background-color: rgb(48, 48, 48);
+    border-radius: 4px;
+}
+form input{
+    padding: 10px 12px;
+    font-size: 25px;
+    border-radius: 10px;
+}
+form label{
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    color: aliceblue;
+}
+form h1{
+    margin: 0 auto;
+    color: aliceblue;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#send-button{
+    margin-top: 20px;
+    max-width: 270px;
+    padding: 10px;
+    background-color: #181818;
+    border: solid;
+    border-color: #3d9bf8;
+    color: aliceblue;
+    transition: color 0.2s, font-size 0.2s;
+}
+#send-button:hover{
+    color: #3d9bf8;
+    cursor: pointer;
+}
+#send-button:active{
+    font-size: 23px;
+}
+#message{
+    padding-bottom: 100px;
+}
+
+/*/// ABOUT ME ///*/
+
+.bottom-line{
+    width: 100%;
+    height: 1px;
+    background-color: #3d9bf8; 
+    left: 0;
+    margin-top: 4% ;
+    z-index: 1000; 
+}
+
+.about-me-content{
+    display: flex;
+}
+
+.about-me-title{
+    display: flex;
+    color: white;
+    justify-content: center;
+    padding: 12px;
+    font-size: 35px;
+}
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 300px;
+    color: aliceblue;
+    text-align: left;
+    margin-top: -40px;
+}
+
+.foto1 img {
+    width: 400px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 6px solid;
+    border-color: aliceblue;
+    transition: border 0.3s;
+}
+.foto1 img:hover{
+    border-color: #3d9bf8;
+}
+
+.main-text-about-me {
+    font-size: 35px;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.content-wrapper2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 300px;
+    color: aliceblue;
+    text-align: left;
+    margin-top: 30px;
+}
+
+table, th, td {
+    margin: 0 auto;
+    width: 60%;
+    color: aliceblue;
+    border: solid;
+    border-color: #3d9bf8;
+    font-size: 30px;
+    border-collapse: collapse;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+th, td{
+    width: 20%;
+}
+
+/*/// PROJECTS ///*/
+
+.container{
+    display: flex;
+    max-width: 1500px;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 70px;
+    border: solid;
+    border-color: #3d9bf8;
+    border-radius: 5px;
+}
+
+.project{
+    position: relative;
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+    margin: 0px 5px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+    color: aliceblue;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+    cursor: pointer;
+}
+
+.project img{
+    width: 100%;
+    height: 320px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+.project img:hover{
+    opacity: 0.4;
+}
+
+.center1 {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    color: aliceblue;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/*/// INTERVIEW ///*/
+
+.interview-text{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(48, 48, 48);
+    border: #3d9bf8 solid;
+    margin-top: 80px;
+}
+.interview-text p{
+    color: aliceblue;
+    font-size: 25px;
+    padding: 0px 50px 20px 50px;
+}
+.interview-text h1{
+    margin-top: 80px;
+    color: aliceblue;
+    font-size: 50px;
+    padding: 0px 50px 20px 50px;
+}
