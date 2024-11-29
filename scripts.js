@@ -36,9 +36,14 @@ function countdown(){
 
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("countdown").innerHTML = "EXPIRED";
+        document.getElementById("countdown").innerHTML = "KLAAR";
     }
     }, 1000);
 }
 
 countdown()
+
+function cookieBox(){
+    document.querySelector(".cookie-melding").style.display = "none"
+    document.querySelector(".blur-background").style.display = "none"
+}
