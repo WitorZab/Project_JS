@@ -37,6 +37,9 @@ body{
     left: 45px;
     font-size: 25px;
 }
+
+/*/// COOKIE MELDING ///*/
+
 .cookie-melding{
     display: flex;
     position: fixed;
@@ -59,7 +62,7 @@ body{
     width: 100%;
     height: 100%;
     backdrop-filter: blur(5px);
-    z-index: 1;
+    z-index: 999;
 }
 
 .cookie-melding p{

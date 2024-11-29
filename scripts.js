@@ -46,4 +46,5 @@ countdown()
 function cookieBox(){
     document.querySelector(".cookie-melding").style.display = "none"
     document.querySelector(".blur-background").style.display = "none"
+    console.log("cookies have been accepted/declined")
 }
