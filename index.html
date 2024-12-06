@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body id="lightMode">
+    <div class="page-wrapper">
     <div class="blur-background"></div>
-    <div class="top-line">
+    <div class="top-line"></div>
+    <div class="countdown-darkmode">
+        <button class="darkmode" type="button" onclick="lightMode()">
+            Light / Dark mode
+        </button>
+        <h1 id="countdown"></h1>
     </div>
-    <button class="darkmode" type="button" onclick="lightMode()">
-        Light / Dark mode
-    </button>
-    <h1 id="countdown"></h1>
+
     <div class="cookie-melding">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam cupiditate rerum soluta nobis vel fuga recusandae reiciendis est perspiciatis, dicta laudantium consequuntur impedit autem veniam expedita sequi eos ipsam voluptate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, deleniti illo eligendi ad temporibus qui libero cum illum similique nostrum, quos minima in iusto! Corrupti incidunt necessitatibus aliquid atque. Beatae <a href="#">...read more</a>
+        </p>
         <div class="buttons">
             <div class="button-accept">
                 <button onclick="cookieBox()">Accept</button>
@@ -23,20 +30,20 @@
                 <button onclick="cookieBox()">Decline</button>
             </div>
         </div>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam cupiditate rerum soluta nobis vel fuga recusandae reiciendis est perspiciatis, dicta laudantium consequuntur impedit autem veniam expedita sequi eos ipsam voluptate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, deleniti illo eligendi ad temporibus qui libero cum illum similique nostrum, quos minima in iusto! Corrupti incidunt necessitatibus aliquid atque. Beatae <a href="#">...read more</a>
-        </p>
     </div>
-    <nav>
+    <nav id="xd">
         <ul>    
             <li><a href="about-me.html">About me</a></li> 
             <li><a href="projects.html">Projects</a></li>
             <li><a href="interview.html">Interview</a></li>
-            <li><a href="contact-form.html" id="contactme">Contact me</a></li>
         </ul>
+        <a href="contact-form.html" id="contactme">Contact me</a>
+        <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+            <i class="fa fa-bars"></i>
+        </a>
     </nav>
-    <main class="homepage-content">
-                
+    
+    <main class="homepage-content">     
         <img src="avatar.jpg" alt="xd">
         <div class="main-text">
             <h1 id="h">
@@ -45,10 +52,10 @@
             <p id="p">
                 Here you can find out who I am, what my experiences are, take a look at the projects I've worked on and more!<br> If u have any questions feel free to send me a message.
             </p>
-            <a href="contact-form.html">Send me a message</a>
+            <a href="contact-form.html" id="a">Send me a message</a>
         </div>
     </main>
-
+    </div>
     <footer>
         <h2>Copyright Wiktor Zabawski</h2>
     </footer>
