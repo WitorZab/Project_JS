@@ -125,7 +125,6 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
     }
     .main-text{
         padding: 1em;
@@ -174,6 +173,8 @@ body{
     .nav.responsive ul{
         padding-top: 15px;
         width: 100%;
+        gap: 10px;
+        flex-direction: column;
     }
   }
 

@@ -18,7 +18,7 @@ function greeting(){
 greeting()
 
 function countdown(){
-    var countDownDate = new Date("Dec 20, 2024 12:00:00").getTime();
+    var countDownDate = new Date("Dec 20, 2024 23:59:59").getTime();
 
     var x = setInterval(function() {
 
@@ -40,7 +40,6 @@ function countdown(){
         }
     }, 1000);
 }
-
 countdown()
 
 function cookieBox(){
@@ -57,19 +56,3 @@ function hamburger() {
       x.className = "nav";
     }
   }
-
-
-
-//   display: flex;
-//   position: absolute;
-//   justify-content: center;
-//   align-items: center;
-//   top: 13%;
-//   left: 30%;
-//   min-width: 700px;
-//   min-height: 700px;
-//   z-index: 1000;
-//   background-color: rgb(48, 48, 48);
-//   color: aliceblue;
-//   border: #3d9bf8 solid;
-//   border-radius: 5px;
